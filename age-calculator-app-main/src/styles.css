@@ -1,0 +1,53 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+main {
+  width: 840px;
+  margin: 0 auto;
+}
+
+.header-box {
+  width: 160px;
+}
+
+h3 {
+  font-size: 14px;
+  font-weight: 700px;
+  margin-top: 56px;
+  color: #716f6f;
+}
+
+h4 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 48px;
+  border: 1px solid #dcdcdc;
+  margin-right: 32px;
+  padding-left: 24px;
+}
+
+hr {
+  margin-left: 48px;
+}
+
+.arrow-svg {
+  background-color: purple;
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  width: 44px;
+}
