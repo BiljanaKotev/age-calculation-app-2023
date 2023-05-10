@@ -18,35 +18,37 @@
   </head>
   <body class="bg-secondary-subtle">
     <main class="bg-white">
-      <header class="d-flex ms-5 mt-5">
-        <div class="header-box">
-          <h3>Day</h3>
-          <h4>24</h4>
-        </div>
-        <div class="header-box">
-          <h3>Month</h3>
-          <h4>09</h4>
-        </div>
-        <div class="header-box">
-          <h3>Year</h3>
-          <h4>1984</h4>
-        </div>
+      <header>
+        <form action="" class="d-flex ms-5 mt-5">
+          <div class="header-box">
+            <h3>Day</h3>
+            <input type="number" name="day" id="day" placeholder="24" />
+          </div>
+          <div class="header-box">
+            <h3>Month</h3>
+            <input type="number" name="month" id="month" placeholder="09" />
+          </div>
+          <div class="header-box">
+            <h3>Year</h3>
+            <input type="number" name="year" id="year-input" placeholder="1984" />
+          </div>
+        </form>
       </header>
-      <div>
+      <div class="hr-arrow-container">
         <hr />
         <div class="arrow-svg"><img src="assets/images/icon-arrow.svg" alt="" /></div>
       </div>
-      <section>
+      <section class="dates-section">
         <div>
-          <span>38</span>
+          <span id="years">38</span>
           <h5>years</h5>
         </div>
         <div>
-          <span>38</span>
+          <span>3</span>
           <h5>months</h5>
         </div>
         <div>
-          <span>38</span>
+          <span>26</span>
           <h5>days</h5>
         </div>
       </section>
