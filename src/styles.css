@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  max-width: 1500px;
+  margin: 0 auto;
+  color: hsl(0, 0%, 8%);
+}
+
+main {
+  width: 840px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.header-box {
+  width: 160px;
+}
+
+h3 {
+  font-size: 14px;
+  font-weight: 700px;
+  margin-top: 56px;
+  color: #716f6f;
+}
+
+form {
+  gap: 15px;
+}
+
+input {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 48px;
+  border: 1px solid #dcdcdc;
+  margin-right: 32px;
+  padding-left: 24px;
+  width: 150px;
+  height: 60px;
+  color: hsl(0, 0%, 8%);
+}
+
+hr {
+  margin-left: 48px;
+}
+
+.arrow-svg {
+  background-color: purple;
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  right: 0;
+  top: 100px;
+}
+
+img {
+  width: 44px;
+}
+
+.dates-section div {
+  display: flex;
+  margin-left: 50px;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+}
+
+.dates-section span {
+  font-size: 100px;
+  color: hsl(259, 100%, 65%);
+  font-weight: 800;
+}
+
+.dates-section h5 {
+  font-size: 75px;
+  font-weight: 800;
+}
