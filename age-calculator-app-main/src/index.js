@@ -6,7 +6,7 @@ const days = document.getElementById("days");
 
 const monthInput = document.getElementById("month-input");
 const months = document.getElementById("months");
-
+console.log(typeof months);
 const date = new Date();
 
 let birthYear;
