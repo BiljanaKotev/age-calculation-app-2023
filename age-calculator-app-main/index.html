@@ -22,15 +22,15 @@
         <form action="" class="d-flex ms-5 mt-5">
           <div class="header-box">
             <h3>Day</h3>
-            <input type="number" name="day" id="day" placeholder="24" />
+            <input type="number" name="day" id="day-input" placeholder="24" required />
           </div>
           <div class="header-box">
             <h3>Month</h3>
-            <input type="number" name="month" id="month" placeholder="09" />
+            <input type="number" name="month" id="month-input" placeholder="09" min="01" max="12" required />
           </div>
           <div class="header-box">
             <h3>Year</h3>
-            <input type="number" name="year" id="year-input" placeholder="1984" />
+            <input type="number" name="year" id="year-input" placeholder="1984" required />
           </div>
         </form>
       </header>
@@ -44,11 +44,11 @@
           <h5>years</h5>
         </div>
         <div>
-          <span>3</span>
+          <span id="months">3</span>
           <h5>months</h5>
         </div>
         <div>
-          <span>26</span>
+          <span id="days">26</span>
           <h5>days</h5>
         </div>
       </section>
