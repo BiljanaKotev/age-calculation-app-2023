@@ -1,12 +1,15 @@
-const yearInput = document.getElementById("year-input");
+let yearInput = document.getElementById("year-input");
 const years = document.getElementById("years");
 
-const dayInput = document.getElementById("day-input");
-const days = document.getElementById("days");
+let dayInput = document.getElementById("day-input");
+let days = document.getElementById("days");
 
-const monthInput = document.getElementById("month-input");
-const months = document.getElementById("months");
-console.log(typeof months);
+let monthInput = document.getElementById("month-input");
+let months = document.getElementById("months");
+
+let yearInputToNum = Number(yearInput.value);
+let monthInputToNum = Number(monthInput.value);
+
 const date = new Date();
 
 let birthYear;
@@ -18,7 +21,7 @@ let currentDay = date.getDate();
 
 yearInput.addEventListener("change", function () {
   if (yearInput.value > currentYear) {
-    alert("Year cannot be in the future");
+    years.textContent = "--";
   } else {
     years.textContent = calculateAgeInYears(years);
   }
@@ -28,15 +31,19 @@ monthInput.addEventListener("change", function () {
   if (monthInput.value >= monthInput.min && monthInput.value <= monthInput.max) {
     months.textContent = calculateAgeInMonths(months);
   } else {
-    alert("Minimum date should be entered as 01 & Maximum date should be entered as 12");
+    months.textContent = "--";
   }
-  if (months.value > 0) {
-    months.value * -1;
+  if (monthInputToNum < 0) {
+    monthInputToNum *= -1;
   }
 });
 
 dayInput.addEventListener("change", function () {
-  days.textContent = calculateAgeInDays(days);
+  if (dayInput.value < 1 || dayInput.value > 31) {
+    days.textContent = "--";
+  } else {
+    days.textContent = calculateAgeInDays(days);
+  }
 });
 
 function calculateAgeInYears(years) {
