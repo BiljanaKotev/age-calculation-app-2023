@@ -1,0 +1,133 @@
+$darkgrey-color: hsl(0, 0%, 8%);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  max-width: 1500px;
+  margin: 0 auto;
+  color: $darkgrey-color;
+}
+
+main {
+  width: 840px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.header__box {
+  width: 160px;
+
+  &__heading {
+    font-size: 14px;
+    font-weight: 700px;
+    margin-top: 56px;
+    color: $darkgrey-color;
+    font-weight: 500;
+  }
+
+  &__input {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 48px;
+    border: 1px solid #dcdcdc;
+    margin-right: 32px;
+    padding-left: 24px;
+    width: 150px;
+    height: 60px;
+    color: $darkgrey-color;
+  }
+}
+
+form {
+  gap: 15px;
+}
+
+::placeholder {
+  color: $darkgrey-color;
+}
+
+hr {
+  margin-left: 48px;
+}
+
+.arrow__container__svg {
+  background-color: purple;
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  right: 0;
+  top: 100px;
+
+  &__img {
+    width: 44px;
+  }
+}
+
+.dates__section {
+  display: flex;
+  margin-left: 50px;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+
+  &__years {
+    font-size: 100px;
+    color: hsl(259, 100%, 65%);
+    font-weight: 800;
+  }
+
+  &__years__heading {
+    font-size: 75px;
+    font-weight: 800;
+  }
+
+  &__months {
+    font-size: 100px;
+    color: hsl(259, 100%, 65%);
+    font-weight: 800;
+  }
+
+  &__months__heading {
+    font-size: 75px;
+    font-weight: 800;
+  }
+
+  &__days {
+    font-size: 100px;
+    color: hsl(259, 100%, 65%);
+    font-weight: 800;
+  }
+
+  &__days__heading {
+    font-size: 75px;
+    font-weight: 800;
+  }
+}
+
+.footer {
+  margin-top: 50px;
+
+  &__attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+  &__attribution__link {
+    color: hsl(228, 45%, 44%);
+  }
+}

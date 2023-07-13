@@ -12,54 +12,56 @@
       crossorigin="anonymous"
     />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,800&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="src/styles.css" />
+    <link rel="stylesheet" href="styles/main.css" />
 
     <title>Frontend Mentor | Age calculator app</title>
   </head>
   <body class="bg-secondary-subtle">
     <main class="bg-white">
-      <header>
+      <header class="header">
         <form action="" class="d-flex ms-5 mt-5">
-          <div class="header-box">
-            <h3>Day</h3>
-            <input type="number" name="day" id="day-input" placeholder="24" required />
+          <div class="header__box">
+            <h3 class="header__box__heading">Day</h3>
+            <input type="number" name="day" id="day-input" placeholder="24" required class="header__box__input" />
           </div>
-          <div class="header-box">
-            <h3>Month</h3>
-            <input type="number" name="month" id="month-input" placeholder="09" min="01" max="12" required />
+          <div class="header__box">
+            <h3 class="header__box__heading">Month</h3>
+            <input type="number" name="month" id="month-input" placeholder="09" min="01" max="12" required class="header__box__input" />
           </div>
-          <div class="header-box">
-            <h3>Year</h3>
-            <input type="number" name="year" id="year-input" placeholder="1984" required />
+          <div class="header__box">
+            <h3 class="header__box__heading">Year</h3>
+            <input type="number" name="year" id="year-input" placeholder="1984" required class="header__box__input" />
           </div>
         </form>
       </header>
-      <div class="hr-arrow-container">
+      <div class="arrow__container">
         <hr />
-        <div class="arrow-svg"><img src="assets/images/icon-arrow.svg" alt="" /></div>
+        <div class="arrow__container__svg">
+          <img src="assets/images/icon-arrow.svg" alt="arrow" class="arrow__container__img" />
+        </div>
       </div>
-      <section class="dates-section">
+      <section class="dates__section">
         <div>
-          <span id="years">38</span>
-          <h5>years</h5>
+          <span class="dates__section__years" id="years">38</span>
+          <h5 class="dates__section__years__heading">years</h5>
         </div>
         <div>
-          <span id="months">3</span>
-          <h5>months</h5>
+          <span class="dates__section__months" id="months">3</span>
+          <h5 class="dates__section__months__heading">months</h5>
         </div>
         <div>
-          <span id="days">26</span>
-          <h5>days</h5>
+          <span class="dates__section__days" id="days">26</span>
+          <h5 class="dates__section__days__heading">days</h5>
         </div>
       </section>
     </main>
-    <footer>
-      <div class="attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
-        <a href="https://github.com/BiljanaKotev/age-calculation-app-2023" target="_blank">Biljana Kotevska</a>.
+    <footer class="footer">
+      <div class="footer__attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="footer__attribution__link">Frontend Mentor</a>. Coded by
+        <a href="https://github.com/BiljanaKotev/age-calculation-app-2023" target="_blank" class="footer__attribution__link">Biljana Kotevska</a>.
       </div>
-      <script src="src/index.js"></script>
     </footer>
+    <script src="src/index.js"></script>
   </body>
 </html>
 
